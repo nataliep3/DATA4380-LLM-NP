@@ -45,7 +45,7 @@ The image below displays a histogram plotting the distribution of scores using o
 
 ![](initial_rating_distribution.png)
 
-The image below displays a histogram plotting the distribution of scores using 50 total PDFs
+The image below displays a histogram and boxplot visualizing the distribution of scores using 50 total PDFs
 
 ![](iteration2_rating_distribution.png)
 
