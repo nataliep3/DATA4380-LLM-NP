@@ -103,7 +103,7 @@ To meaningfully expand on this project, I would like to try:
   * time
   * PyMuPDF
 
-All packages can be installed using pip command in terminal or notebook
+All packages can be installed using `pip` command in terminal or notebook
 
 ### Data
 
