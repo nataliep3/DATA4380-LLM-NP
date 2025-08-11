@@ -6,7 +6,7 @@ This repository holds an attempt to use a large language model to summarize open
 
 ## Overview
 
-The goal of this project was to explore how well a large language model could create a meaningful and articulate summary of a research paper solely using the body of the paper. This problem required an input of a well-organized JSON file containing the abstracts, bodies, and file names of each paper, with an expected outcome of a concise and accurate summarization of the paper. Separating the abstract of the paper from the body allowed use of the same LLM model to compare between the created summary and the extracted abstract. Comparison was done with the same LLM model used to summarize, gpt-3.5-turbo, and was prompted to use a scale of 1-5 and give a short explanation for each comparison for visualization and comprehension purposes. 
+The goal of this project was to explore how well a large language model could create a meaningful and articulate summary of a research paper solely using the body of the paper. This problem required an input of a well-organized JSON file containing the abstracts, bodies, and file names of each paper, with an expected outcome of a concise and accurate summarization of the paper. Separating the abstract of the paper from the body allowed use of the same LLM model to compare between the created summary and the extracted abstract. Comparison was done with the same LLM model used to summarize, gpt-3.5-turbo, and was prompted to use a scale of 1-5 and give a short explanation for each comparison for visualization and comprehension purposes. Both iterations did relatively well at summarizing, and had an average score of between 3.6 - 3.9 out of 5. 
 
 ## Summary of Workdone
 
@@ -14,35 +14,28 @@ The goal of this project was to explore how well a large language model could cr
 
 * Data:
   * Type: open-source .pdf files downloaded [here](https://www.ncbi.nlm.nih.gov/)
-    * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-    * Input: CSV file of features, output: signal/background flag in 1st column.
-  * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
+    * Input: .pdf files, with text later extracted for ease of use
+    * Output: .json files containing summaries and comparisons created by the LLM
+  * Size: 25-50 .pdf files used
+  * The first iteration used only 25 unique papers, and the second iteration used 50 unique papers, including the 25 from the first iteration
 
 #### Preprocessing / Clean up
 
-* Describe any manipulations you performed to the data.
-
-#### Data Visualization
-
-Show a few visualization of the data and say a few words about what you see.
+* In order to present the LLM with only the body of each research paper, it was necessary to create functions using PyMuPDF to extract parts of the text based off of relevant headings and text formatting
+* Files are required to be in organized directories to avoid the inclusion of unwanted files, which was done using terminal commands
 
 ### Problem Formulation
 
-* Define:
-  * Input / Output
-  * Models
-    * Describe the different models you tried and why.
-  * Loss, Optimizer, other Hyperparameters.
+* Input: JSON file containing separated 'abstract' and 'body' text
+* Output: JSON file containing only the 'abstract' and 'summary' text created from LLM
+* Models: I chose to work with OpenAI's gpt-3.5-turbo model in order to balance cost, speed, and capability
+* Metric: a generated rating scale of 1-5 created by gpt-3.5-turbo after being prompted to give a numeric rating and a short text explanation
 
 ### Training
 
-* Describe the training:
-  * How you trained: software and hardware.
-  * How did training take.
-  * Training curves (loss vs epoch for test/train).
-  * How did you decide to stop training.
-  * Any difficulties? How did you resolve them?
+* Software: Python 3.10 in a virtual environment, Jupyter Notebook
+* Hardware: personal Macbook Air
+* Difficulties: I did my data collection manually, which limited the ability to train on a larger dataset of research papers. It was also difficult balancing the cost of the token usage and token limits that gpt-3.5-turbo has, which required me to work through chunking the bodies of the paper to avoid overusage of tokens and approaching the token limit.
 
 ### Performance Comparison
 
