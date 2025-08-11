@@ -50,7 +50,6 @@ The image below displays a histogram and boxplot visualizing the distribution of
 ![](iteration2_rating_distribution.png)
 
 Below are some ratings and justifications created using 50 papers to summarize
---
 Example explanations for summary ratings:
 
 new18.pdf (Rating: 5):
