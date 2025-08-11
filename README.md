@@ -55,11 +55,13 @@ The image below displays a histogram and boxplot visualizing the distribution of
 > The summary provides a comprehensive overview of various topics in psychology research, including neural and cognitive modeling, cognitive behavioral therapy, affect regulation, and more. It effectively highlights key authors and concepts
 > discussed in the text.
 
-new24.pdf (Rating: 2):
-The abstract provides a detailed description of the study inclusion and exclusion criteria, search strategy, data extraction, quality appraisal, synthesis of results, and study characteristics. However, it lacks a clear and concise summary of the key findings and implications of the research. The summary, on the other hand, provides a more focused overview of the study findings related to psychological stress after stroke, highlighting the predictors of stress and the impact on functional and emotional outcomes. However, it lacks the depth and detail provided in the abstract.
+> new24.pdf (Rating: 2):
+> The abstract provides a detailed description of the study inclusion and exclusion criteria, search strategy, data extraction, quality appraisal, synthesis of results, and study characteristics. However, it lacks a clear and concise summary of > the key findings and implications of the research. The summary, on the other hand, provides a more focused overview of the study findings related to psychological stress after stroke, highlighting the predictors of stress and the impact on
+> functional and emotional outcomes. However, it lacks the depth and detail provided in the abstract.
 
-psychpaper14.pdf (Rating: 4):
-The abstract provides a comprehensive overview of the research study, outlining the problem, methodology, findings, and implications. It effectively summarizes the key points of the research paper and highlights the significance of the study in addressing consumer behavior on e-commerce platforms. The abstract is well-structured and provides clear insights into the research findings.
+> psychpaper14.pdf (Rating: 4):
+> The abstract provides a comprehensive overview of the research study, outlining the problem, methodology, findings, and implications. It effectively summarizes the key points of the research paper and highlights the significance of the study
+> in addressing consumer behavior on e-commerce platforms. The abstract is well-structured and provides clear insights into the research findings.
 
 ### Conclusions
 
