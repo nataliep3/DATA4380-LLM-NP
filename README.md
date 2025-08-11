@@ -49,8 +49,7 @@ The image below displays a histogram and boxplot visualizing the distribution of
 
 ![](iteration2_rating_distribution.png)
 
-** Below are some ratings and justifications created using 50 papers to summarize **
-Example explanations for summary ratings:
+**Below are some ratings and justifications created using 50 papers to summarize**
 
 new18.pdf (Rating: 5):
 The summary provides a comprehensive overview of various topics in psychology research, including neural and cognitive modeling, cognitive behavioral therapy, affect regulation, and more. It effectively highlights key authors and concepts discussed in the text.
