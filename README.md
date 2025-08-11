@@ -1,25 +1,19 @@
 ![](UTA-DataScience-Logo.png)
 
-# Project Title
+# LLMs & Summarizing Peer-Reviewed Psychology Papers
 
-* **One Sentence Summary** Ex: This repository holds an attempt to apply LSTMs to Stock Market using data from
-"Get Rich" Kaggle challenge (provide link). 
+This repository holds an attempt to use LLMS to summarize open source, peer-reviewed psychology research papers while using their respective abstracts as a source of comparison for LLM output quality.
 
 ## Overview
 
-* This section could contain a short paragraph which include the following:
-  * **Definition of the tasks / challenge**  Ex: The task, as defined by the Kaggle challenge is to use a time series of 12 features, sampled daily for 1 month, to predict the next day's price of a stock.
-  * **Your approach** Ex: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
-  * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
+The goal of this project was to explore how well a large language model could create a meaningful and articulate summary of a research paper solely using the body of the paper. This problem required an input of a well-organized JSON file containing the abstracts, bodies, and file names of each paper, with an expected outcome of a concise and accurate summarization of the paper. Separating the abstract of the paper from the body allowed use of the same LLM model to compare between the created summary and the extracted abstract. Comparison was done with the same LLM model used to summarize, gpt-3.5-turbo, and was prompted to use a scale of 1-5 and give a short explanation for each comparison for visualization and comprehension purposes. 
 
 ## Summary of Workdone
-
-Include only the sections that are relevant an appropriate.
 
 ### Data
 
 * Data:
-  * Type: For example
+  * Type: open-source .pdf files downloaded [here](https://www.ncbi.nlm.nih.gov/)
     * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
     * Input: CSV file of features, output: signal/background flag in 1st column.
   * Size: How much data?
