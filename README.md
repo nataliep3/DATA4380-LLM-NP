@@ -13,10 +13,10 @@ The goal of this project was to explore how well a large language model could cr
 ### Data
 
 * Data:
-  * Type: open-source .pdf files downloaded [here](https://www.ncbi.nlm.nih.gov/)
-    * Input: '.pdf' files, with text later extracted for ease of use
-    * Output: '.json' files containing summaries and comparisons created by the LLM
-  * Size: 25-50 '.pdf' files used
+  * Type: open-source PDF files downloaded [here](https://www.ncbi.nlm.nih.gov/)
+    * Input: `.pdf` files, with text later extracted for ease of use
+    * Output: `.json` files containing summaries and comparisons created by the LLM
+  * Size: 25-50 `.pdf` files used
   * The first iteration used only 25 unique papers, and the second iteration used 50 unique papers, including the 25 from the first iteration
 
 #### Preprocessing / Clean up
@@ -26,8 +26,8 @@ The goal of this project was to explore how well a large language model could cr
 
 ### Problem Formulation
 
-* Input: JSON file containing separated 'abstract' and 'body' text
-* Output: JSON file containing only the 'abstract' and 'summary' text created from LLM
+* Input: JSON file containing separated `'abstract'` and `'body'` text
+* Output: JSON file containing only the `'abstract'` and `'summary'` text created from LLM
 * Models: I chose to work with OpenAI's GPT-3.5-turbo model in order to balance cost, speed, and capability
 * Metric: A generated rating scale of 1-5 created by GPT-3.5-turbo after being prompted to give a numeric rating and a short text explanation
 
@@ -83,13 +83,13 @@ To meaningfully expand on this project, I would like to try:
 ### Overview of files in repository
 
 * The directory containing all research papers required organization before it could be used
-* extraction_separation_initial.ipynb: separates the intial 25 PDFS between their 'abstracts' and 'bodies', and saves this output to a JSON file
+* extraction_separation_initial.ipynb: separates the intial 25 PDFS between their `'abstracts'` and `'bodies'`, and saves this output to a JSON file
 * summarize_initial.ipynb: prompts LLM to generate summaries of each paper body and saves this output to a JSON file
-* comparison_initial.ipynb: prompts LLM to generate comparison ratings and explanations between each 'abstract' and 'body', and saves this output to a JSON file
+* comparison_initial.ipynb: prompts LLM to generate comparison ratings and explanations between each `'abstract'` and `'body'`, and saves this output to a JSON file
 * stat_visualization_inition.ipynb: visualizes comparison ratings for the first attempt
-* extraction_separation_iteration2.ipynb: separates the 50 PDFS between their 'abstracts' and 'bodies', and saves this output to a JSON file
+* extraction_separation_iteration2.ipynb: separates the 50 PDFS between their '`abstracts'` and `'bodies'`, and saves this output to a JSON file
 * summarize_iteration2.ipynb: prompts LLM to generate summaries of each paper body and saves this output to a JSON file
-* comparison_iteration2.ipynb: prompts LLM to generate comparison ratings and explanations between each 'abstract' and 'body', and saves this output to a JSON file
+* comparison_iteration2.ipynb: prompts LLM to generate comparison ratings and explanations between each `'abstract'` and `'body'`, and saves this output to a JSON file
 * stat_visualization_iteration2.ipynb: visualizes comparison ratings for the second attempt
 
 ### Software Setup
