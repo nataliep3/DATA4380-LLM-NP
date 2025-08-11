@@ -39,9 +39,9 @@ The goal of this project was to explore how well a large language model could cr
 
 ### Performance Comparison
 
-* Clearly define the key performance metric(s).
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
+Key performance metric: Average rating between 1-5
+
+![](initial_rating_distribution.png)
 
 ### Conclusions
 
