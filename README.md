@@ -41,7 +41,13 @@ The goal of this project was to explore how well a large language model could cr
 
 Key performance metric: Average rating between 1-5
 
+The image below displays a histogram plotting the distribution of scores using only 25 PDFs
+
 ![](initial_rating_distribution.png)
+
+The image below displays a histogram plotting the distribution of scores using 50 total PDFs
+
+![](iteration2_rating_distribution.png)
 
 ### Conclusions
 
