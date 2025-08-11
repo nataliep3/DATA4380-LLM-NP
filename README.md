@@ -82,44 +82,31 @@ To meaningfully expand on this project, I would like to try:
 
 ### Overview of files in repository
 
-* Describe the directory structure, if any.
-* List all relavent files and describe their role in the package.
-* An example:
-  * utils.py: various functions that are used in cleaning and visualizing data.
-  * preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
-  * visualization.ipynb: Creates various visualizations of the data.
-  * models.py: Contains functions that build the various models.
-  * training-model-1.ipynb: Trains the first model and saves model during training.
-  * training-model-2.ipynb: Trains the second model and saves model during training.
-  * training-model-3.ipynb: Trains the third model and saves model during training.
-  * performance.ipynb: loads multiple trained models and compares results.
-  * inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
-
-* Note that all of these notebooks should contain enough text for someone to understand what is happening.
+* The directory containing all research papers required organization before it could be used
+* extraction_separation_initial.ipynb: separates the intial 25 PDFS between their 'abstracts' and 'bodies', and saves this output to a JSON file
+* summarize_initial.ipynb: prompts LLM to generate summaries of each paper body and saves this output to a JSON file
+* comparison_initial.ipynb: prompts LLM to generate comparison ratings and explanations between each 'abstract' and 'body', and saves this output to a JSON file
+* stat_visualization_inition.ipynb: visualizes comparison ratings for the first attempt
+* extraction_separation_iteration2.ipynb: separates the 50 PDFS between their 'abstracts' and 'bodies', and saves this output to a JSON file
+* summarize_iteration2.ipynb: prompts LLM to generate summaries of each paper body and saves this output to a JSON file
+* comparison_iteration2.ipynb: prompts LLM to generate comparison ratings and explanations between each 'abstract' and 'body', and saves this output to a JSON file
+* stat_visualization_iteration2.ipynb: visualizes comparison ratings for the second attempt
 
 ### Software Setup
-* List all of the required packages.
-* If not standard, provide or point to instruction for installing the packages.
-* Describe how to install your package.
+* Required packages:
+  * json
+  * NumPy
+  * matplotlib
+  * pathlib
+  * dotenv
+  * openai
+  * time
+  * PyMuPDF
+ All packages can be installed using pip command in terminal or notebook
 
 ### Data
 
-* Point to where they can download the data.
-* Lead them through preprocessing steps, if necessary.
-
-### Training
-
-* Describe how to train the model
-
-#### Performance Evaluation
-
-* Describe how to run the performance evaluation.
-
-
-## Citations
-
-* Provide any references.
-
+* All data can be downloaded from [here](https://www.ncbi.nlm.nih.gov/) using the given search feature
 
 
 
