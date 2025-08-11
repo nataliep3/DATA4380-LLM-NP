@@ -2,7 +2,7 @@
 
 # LLMs & Summarizing Peer-Reviewed Psychology Papers
 
-This repository holds an attempt to use LLMS to summarize open source, peer-reviewed psychology research papers while using their respective abstracts as a source of comparison for LLM output quality.
+This repository holds an attempt to use a large language model to summarize open source, peer-reviewed psychology research papers while using their respective abstracts as a source of comparison for LLM output quality.
 
 ## Overview
 
