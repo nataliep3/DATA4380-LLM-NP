@@ -14,9 +14,9 @@ The goal of this project was to explore how well a large language model could cr
 
 * Data:
   * Type: open-source .pdf files downloaded [here](https://www.ncbi.nlm.nih.gov/)
-    * Input: .pdf files, with text later extracted for ease of use
-    * Output: .json files containing summaries and comparisons created by the LLM
-  * Size: 25-50 .pdf files used
+    * Input: '.pdf' files, with text later extracted for ease of use
+    * Output: '.json' files containing summaries and comparisons created by the LLM
+  * Size: 25-50 '.pdf' files used
   * The first iteration used only 25 unique papers, and the second iteration used 50 unique papers, including the 25 from the first iteration
 
 #### Preprocessing / Clean up
