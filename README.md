@@ -65,7 +65,7 @@ The image below displays a histogram and boxplot visualizing the distribution of
 
 ### Conclusions
 
-After increasing the amount of research papers used for summarization and comparison, there were less excellent and less below average ratings, but not a significant change in the mean of the ratings (a 0.02 change from 25 to 50 papers). I believe the size of data the LLM was given significantly hurt the performance of the models, alongside comparing different models that are both newer and older than GPT-3.5-turbo.
+Increasing the dataset size from 25 to 50 papers resulted in fewer extreme ratings but only a slight improvement in average score (0.02 increase). The limited size of the training data and the choice of model likely impacted performance. Future work could explore newer or larger models beyond GPT-3.5-turbo.
 
 ### Future Work
 
