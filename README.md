@@ -6,7 +6,7 @@ This repository holds an attempt to use a large language model to summarize open
 
 ## Overview
 
-The goal of this project was to explore how well a large language model could create a meaningful and articulate summary of a research paper solely using the body of the paper. This problem required an input of a well-organized JSON file containing the abstracts, bodies, and file names of each paper, with an expected outcome of a concise and accurate summarization of the paper. Separating the abstract of the paper from the body allowed use of the same LLM model to compare between the created summary and the extracted abstract. Comparison was done with the same LLM model used to summarize, gpt-3.5-turbo, and was prompted to use a scale of 1-5 and give a short explanation for each comparison for visualization and comprehension purposes. Both iterations did relatively well at summarizing, and had an average score of between 3.6 - 3.9 out of 5. 
+The goal of this project was to explore how well a large language model could create a meaningful and articulate summary of a research paper solely using the body of the paper. This problem required an input of a well-organized JSON file containing the abstracts, bodies, and file names of each paper, with an expected outcome of a concise and accurate summarization of the paper. Separating the abstract of the paper from the body allowed use of the same LLM model to compare between the created summary and the extracted abstract. Comparison was done with the same LLM model used to summarize, GPT-3.5-turbo, and was prompted to use a scale of 1-5 and give a short explanation for each comparison for visualization and comprehension purposes. Both iterations did relatively well at summarizing, and had an average score of 3.9 out of 5. 
 
 ## Summary of Workdone
 
@@ -28,8 +28,8 @@ The goal of this project was to explore how well a large language model could cr
 
 * Input: JSON file containing separated 'abstract' and 'body' text
 * Output: JSON file containing only the 'abstract' and 'summary' text created from LLM
-* Models: I chose to work with OpenAI's gpt-3.5-turbo model in order to balance cost, speed, and capability
-* Metric: a generated rating scale of 1-5 created by gpt-3.5-turbo after being prompted to give a numeric rating and a short text explanation
+* Models: I chose to work with OpenAI's GPT-3.5-turbo model in order to balance cost, speed, and capability
+* Metric: A generated rating scale of 1-5 created by GPT-3.5-turbo after being prompted to give a numeric rating and a short text explanation
 
 ### Training
 
@@ -49,14 +49,30 @@ The image below displays a histogram and boxplot visualizing the distribution of
 
 ![](iteration2_rating_distribution.png)
 
+Below are some ratings and justifications created using 50 papers to summarize
+--
+Example explanations for summary ratings:
+
+new18.pdf (Rating: 5):
+The summary provides a comprehensive overview of various topics in psychology research, including neural and cognitive modeling, cognitive behavioral therapy, affect regulation, and more. It effectively highlights key authors and concepts discussed in the text.
+
+new24.pdf (Rating: 2):
+The abstract provides a detailed description of the study inclusion and exclusion criteria, search strategy, data extraction, quality appraisal, synthesis of results, and study characteristics. However, it lacks a clear and concise summary of the key findings and implications of the research. The summary, on the other hand, provides a more focused overview of the study findings related to psychological stress after stroke, highlighting the predictors of stress and the impact on functional and emotional outcomes. However, it lacks the depth and detail provided in the abstract.
+
+psychpaper14.pdf (Rating: 4):
+The abstract provides a comprehensive overview of the research study, outlining the problem, methodology, findings, and implications. It effectively summarizes the key points of the research paper and highlights the significance of the study in addressing consumer behavior on e-commerce platforms. The abstract is well-structured and provides clear insights into the research findings.
+
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+After increasing the amount of research papers used for summarization and comparison, there were less excellent and less below average ratings, but not a significant change in the mean of the ratings (a 0.02 change from 25 to 50 papers). I believe the size of data the LLM was given significantly hurt the performance of the models, alongside comparing different models that are both newer and older than GPT-3.5-turbo.
 
 ### Future Work
 
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
+To meaningfully expand on this project, I would like to try:
+* Automating PDF downloads to increase overall data set size
+* Work with a variety of models, such as GPT-4 or GPT-3.5-turbo-16k
+* Increasing the difficulty or phrasing of the prompts to require stricter grading on summaries
+* Adjusting the summarization prompts for clarity or concision
 
 ## How to reproduce results
 
